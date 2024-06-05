@@ -1,0 +1,12 @@
+extends layout
+block content
+  h1= PS2
+  p Welcome to PS2
+  if key === 'GSW'
+    h1 2021 NBA Champion: #{key}
+  else if key != null
+    h1  #{key} sucks
+  else if key2 != null
+    h1 POST testing:
+    h2 - You suck if you support: #{key2}
+    h2 - length: #{len}
